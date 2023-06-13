@@ -65,7 +65,7 @@ data[5,2] <- sum(ships[33:40, ]$incidents)
 plot(data$type,data$incidents, xlab = "Type of Ship", ylab= "Total accident caused by the Ship",pch = 16)
 
 
-# I agree with your hypothesis as B has the largest value 
+# I agree with your hypothesis as B has the largest value in the above scatterplot
 
 
 
