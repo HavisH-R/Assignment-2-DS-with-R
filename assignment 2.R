@@ -57,9 +57,9 @@ ships
 data <- ships[,c(1,5)]
 data <- data[c(8,16,24,32,40),]
 data[,2] <- 0
-for (i in 1:3) {
-  data[i, 2] <- sum(ships[8*(i-1)+1:8*i, ]$incidents)
-}
+data[1,2] <- sum(ships[1:8, ]$incidents)
+data[2,2] <- sum(ships[9:16, ]$incidents)
+data[3,2] <- sum(ships[17:24, ]$incidents)
 data[4,2] <- sum(ships[25:32, ]$incidents)
 data[5,2] <- sum(ships[33:40, ]$incidents)
 plot(data$type,data$incidents, xlab = "Type of Ship", ylab= "Total accident caused by the Ship",pch = 16)
